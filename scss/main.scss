@@ -23,7 +23,7 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    font-size: 6rem; //rem is multiplier of html fontsize
+    font-size: 4rem; //rem is multiplier of html fontsize
   }
 
   &.sm-heading {
@@ -92,7 +92,7 @@ main {
   }
   .bio {
     grid-area: bio;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .job1 {
     grid-area: job1;
