@@ -3,11 +3,17 @@
   .projects {
     grid-template-columns: repeat(5, 1fr);
   }
+  .techs {
+    grid-template-columns: repeat(7, 1fr);
+  }
 }
 //desktops
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .techs {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 //tablets
@@ -52,6 +58,10 @@
     .projects {
       grid-template-columns: repeat(3, 1fr);
     }
+
+    .techs {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   .about-info {
@@ -72,5 +82,8 @@
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+  .techs {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
