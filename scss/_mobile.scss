@@ -4,7 +4,7 @@
     grid-template-columns: repeat(5, 1fr);
   }
   .techs {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(9, 1fr);
   }
 }
 //desktops
@@ -13,7 +13,7 @@
     grid-template-columns: repeat(4, 1fr);
   }
   .techs {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
   }
 }
 //tablets
@@ -60,7 +60,7 @@
     }
 
     .techs {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(5, 1fr);
     }
   }
 

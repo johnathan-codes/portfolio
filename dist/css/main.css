@@ -265,13 +265,13 @@ main {
   .projects {
     grid-template-columns: repeat(5, 1fr); }
   .techs {
-    grid-template-columns: repeat(7, 1fr); } }
+    grid-template-columns: repeat(9, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
   .techs {
-    grid-template-columns: repeat(6, 1fr); } }
+    grid-template-columns: repeat(7, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -302,7 +302,7 @@ main {
     .menu-branding .projects {
       grid-template-columns: repeat(3, 1fr); }
     .menu-branding .techs {
-      grid-template-columns: repeat(3, 1fr); }
+      grid-template-columns: repeat(5, 1fr); }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3' 'job4';
     grid-template-columns: 1fr; } }
