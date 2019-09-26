@@ -196,6 +196,7 @@ main {
       border-color: #d65147af;
       transition: all 0.5s ease-out; }
   .projects img {
+    width: 100%;
     border: #fff 3px solid; }
     .projects img:hover {
       opacity: 0.5;
