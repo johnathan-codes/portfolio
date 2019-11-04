@@ -5,8 +5,7 @@
       !(function() {
         var analytics = (window.analytics = window.analytics || []);
         if (!analytics.initialize)
-          if (analytics.invoked)
-            window.console && console.error && console.error('Segment snippet included twice.');
+          if (analytics.invoked) window.console && console.error && console.error('Segment snippet included twice.');
           else {
             analytics.invoked = !0;
             analytics.methods = [
@@ -108,11 +107,6 @@
           <li class="nav-item">
             <a href="tech.html" class="nav-link">
               Known technologies
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="news.html" class="nav-link">
-              News
             </a>
           </li>
         </ul>
