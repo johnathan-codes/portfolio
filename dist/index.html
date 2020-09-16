@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <script>
-      !(function() {
+      !(function () {
         var analytics = (window.analytics = window.analytics || []);
         if (!analytics.initialize)
-          if (analytics.invoked) window.console && console.error && console.error('Segment snippet included twice.');
+          if (analytics.invoked)
+            window.console && console.error && console.error('Segment snippet included twice.');
           else {
             analytics.invoked = !0;
             analytics.methods = [
@@ -24,10 +25,10 @@
               'page',
               'once',
               'off',
-              'on'
+              'on',
             ];
-            analytics.factory = function(t) {
-              return function() {
+            analytics.factory = function (t) {
+              return function () {
                 var e = Array.prototype.slice.call(arguments);
                 e.unshift(t);
                 analytics.push(e);
@@ -38,7 +39,7 @@
               var e = analytics.methods[t];
               analytics[e] = analytics.factory(e);
             }
-            analytics.load = function(t, e) {
+            analytics.load = function (t, e) {
               var n = document.createElement('script');
               n.type = 'text/javascript';
               n.async = !0;
@@ -82,32 +83,22 @@
         </div>
         <ul class="menu-nav">
           <li class="nav-item current">
-            <a href="index.html" class="nav-link">
-              Home
-            </a>
+            <a href="index.html" class="nav-link"> Home </a>
           </li>
 
           <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              About
-            </a>
+            <a href="about.html" class="nav-link"> About </a>
           </li>
 
           <li class="nav-item">
-            <a href="projects.html" class="nav-link">
-              Projects
-            </a>
+            <a href="projects.html" class="nav-link"> Projects </a>
           </li>
 
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              Contact
-            </a>
+            <a href="contact.html" class="nav-link"> Contact </a>
           </li>
           <li class="nav-item">
-            <a href="tech.html" class="nav-link">
-              Known technologies
-            </a>
+            <a href="tech.html" class="nav-link"> Known technologies </a>
           </li>
         </ul>
       </nav>
@@ -118,21 +109,25 @@
         Andrej
         <span class="text-secondary">Šebeň</span>
       </h1>
-      <h2 class="sm-heading">
-        Developer, Programming enthusiast & more to come
-      </h2>
+      <h2 class="sm-heading">Developer, Programming enthusiast & more to come</h2>
       <div class="icons">
-        <a href="https://onemandevz.itch.io" title="Itch.io"><i class="fab fa-itch-io fa-2x"></i></a>
+        <a href="https://onemandevz.itch.io" title="Itch.io"
+          ><i class="fab fa-itch-io fa-2x"></i
+        ></a>
         <a href="https://www.linkedin.com/in/andrej-%C5%A1ebe%C5%88-b9517113b/" title="LinkedIn"
           ><i class="fab fa-linkedin fa-2x"></i
         ></a>
         <a href="https://github.com/OneManDevz" title="GitHub">
           <i class="fab fa-github fa-2x"></i>
         </a>
-        <a href="/files/CV_AndrejSeben_EN.docx" title="Download resume" download="CV_AndrejSeben_EN.docx">
+        <a
+          href="/files/CV_AndrejSeben_EN.pdf"
+          title="Download resume"
+          download="CV_AndrejSeben_EN.pdf"
+        >
           <i class="fas fa-file-download fa-2x"></i>
         </a>
-        <a href="https://blog.onemandevz.pro/" title="Temporary Blog">
+        <a href="https://blog.johnathan.codes/" title="Temporary Blog" target="_blank">
           <i class="fab fa-blogger fa-2x"></i>
         </a>
       </div>
