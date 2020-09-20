@@ -1,136 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script>
-      !(function() {
-        var analytics = (window.analytics = window.analytics || []);
-        if (!analytics.initialize)
-          if (analytics.invoked) window.console && console.error && console.error('Segment snippet included twice.');
-          else {
-            analytics.invoked = !0;
-            analytics.methods = [
-              'trackSubmit',
-              'trackClick',
-              'trackLink',
-              'trackForm',
-              'pageview',
-              'identify',
-              'reset',
-              'group',
-              'track',
-              'ready',
-              'alias',
-              'debug',
-              'page',
-              'once',
-              'off',
-              'on'
-            ];
-            analytics.factory = function(t) {
-              return function() {
-                var e = Array.prototype.slice.call(arguments);
-                e.unshift(t);
-                analytics.push(e);
-                return analytics;
-              };
+
+<head>
+  <script>
+    !(function () {
+      var analytics = (window.analytics = window.analytics || []);
+      if (!analytics.initialize)
+        if (analytics.invoked) window.console && console.error && console.error('Segment snippet included twice.');
+        else {
+          analytics.invoked = !0;
+          analytics.methods = [
+            'trackSubmit',
+            'trackClick',
+            'trackLink',
+            'trackForm',
+            'pageview',
+            'identify',
+            'reset',
+            'group',
+            'track',
+            'ready',
+            'alias',
+            'debug',
+            'page',
+            'once',
+            'off',
+            'on'
+          ];
+          analytics.factory = function (t) {
+            return function () {
+              var e = Array.prototype.slice.call(arguments);
+              e.unshift(t);
+              analytics.push(e);
+              return analytics;
             };
-            for (var t = 0; t < analytics.methods.length; t++) {
-              var e = analytics.methods[t];
-              analytics[e] = analytics.factory(e);
-            }
-            analytics.load = function(t, e) {
-              var n = document.createElement('script');
-              n.type = 'text/javascript';
-              n.async = !0;
-              n.src = 'https://cdn.segment.com/analytics.js/v1/' + t + '/analytics.min.js';
-              var a = document.getElementsByTagName('script')[0];
-              a.parentNode.insertBefore(n, a);
-              analytics._loadOptions = e;
-            };
-            analytics.SNIPPET_VERSION = '4.1.0';
-            analytics.load('YHeQyAdT4dS8r0XG8Zsho8Vn7wCKwiSZ');
-            analytics.page();
+          };
+          for (var t = 0; t < analytics.methods.length; t++) {
+            var e = analytics.methods[t];
+            analytics[e] = analytics.factory(e);
           }
-      })();
-    </script>
+          analytics.load = function (t, e) {
+            var n = document.createElement('script');
+            n.type = 'text/javascript';
+            n.async = !0;
+            n.src = 'https://cdn.segment.com/analytics.js/v1/' + t + '/analytics.min.js';
+            var a = document.getElementsByTagName('script')[0];
+            a.parentNode.insertBefore(n, a);
+            analytics._loadOptions = e;
+          };
+          analytics.SNIPPET_VERSION = '4.1.0';
+          analytics.load('YHeQyAdT4dS8r0XG8Zsho8Vn7wCKwiSZ');
+          analytics.page();
+        }
+    })();
+  </script>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="img/avatar2.ico" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="img/avatar2.ico" />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
-      integrity="sha384-IT8OQ5/IfeLGe8ZMxjj3QQNqT0zhBJSiFCL3uolrGgKRuenIU+mMS94kck/AHZWu"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Contact</title>
-  </head>
-  <body>
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+  <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
+    integrity="sha384-IT8OQ5/IfeLGe8ZMxjj3QQNqT0zhBJSiFCL3uolrGgKRuenIU+mMS94kck/AHZWu"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Contact</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
       </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
 
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">
-              Home
-            </a>
-          </li>
+        <li class="nav-item ">
+          <a href="about.html" class="nav-link">
+            About
+          </a>
+        </li>
 
-          <li class="nav-item ">
-            <a href="about.html" class="nav-link">
-              About
-            </a>
-          </li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link">
+            Projects
+          </a>
+        </li>
 
-          <li class="nav-item">
-            <a href="projects.html" class="nav-link">
-              Projects
-            </a>
-          </li>
+        <li class="nav-item current">
+          <a href="contact.html" class="nav-link">
+            Contact
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="tech.html" class="nav-link">
+            Known technologies
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-          <li class="nav-item current">
-            <a href="contact.html" class="nav-link">
-              Contact
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="tech.html" class="nav-link">
-              Known technologies
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="about">
-      <h1 class="lg-heading">
-        Contact
-        <span class="text-secondary">me</span>
-      </h1>
-      <h2 class="sm-heading">
-        How to get in touch?
-      </h2>
-      <div class="boxes">
-        <div>
-          <span class="text-secondary">Email: </span>
-          <a href="mailto:contact@onemandevz.pro">contact@onemandevz.pro</a>
-        </div>
+  <main id="about">
+    <h1 class="lg-heading">
+      Contact
+      <span class="text-secondary">me</span>
+    </h1>
+    <h2 class="sm-heading">
+      How to get in touch?
+    </h2>
+    <div class="boxes">
+      <div>
+        <span class="text-secondary">Email: </span>
+        <a href="mailto:contact@onemandevz.pro">andrej@seben.work</a>
       </div>
-    </main>
-    <footer id="main-footer">
-      Copyright &copy; 2019
-    </footer>
-    <script src="js/main.js"></script>
-  </body>
+    </div>
+  </main>
+  <footer id="main-footer">
+    Copyright &copy; 2019
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

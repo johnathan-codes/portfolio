@@ -1,137 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script>
-      !(function () {
-        var analytics = (window.analytics = window.analytics || []);
-        if (!analytics.initialize)
-          if (analytics.invoked)
-            window.console && console.error && console.error('Segment snippet included twice.');
-          else {
-            analytics.invoked = !0;
-            analytics.methods = [
-              'trackSubmit',
-              'trackClick',
-              'trackLink',
-              'trackForm',
-              'pageview',
-              'identify',
-              'reset',
-              'group',
-              'track',
-              'ready',
-              'alias',
-              'debug',
-              'page',
-              'once',
-              'off',
-              'on',
-            ];
-            analytics.factory = function (t) {
-              return function () {
-                var e = Array.prototype.slice.call(arguments);
-                e.unshift(t);
-                analytics.push(e);
-                return analytics;
-              };
+
+<head>
+  <script>
+    !(function () {
+      var analytics = (window.analytics = window.analytics || []);
+      if (!analytics.initialize)
+        if (analytics.invoked)
+          window.console && console.error && console.error('Segment snippet included twice.');
+        else {
+          analytics.invoked = !0;
+          analytics.methods = [
+            'trackSubmit',
+            'trackClick',
+            'trackLink',
+            'trackForm',
+            'pageview',
+            'identify',
+            'reset',
+            'group',
+            'track',
+            'ready',
+            'alias',
+            'debug',
+            'page',
+            'once',
+            'off',
+            'on',
+          ];
+          analytics.factory = function (t) {
+            return function () {
+              var e = Array.prototype.slice.call(arguments);
+              e.unshift(t);
+              analytics.push(e);
+              return analytics;
             };
-            for (var t = 0; t < analytics.methods.length; t++) {
-              var e = analytics.methods[t];
-              analytics[e] = analytics.factory(e);
-            }
-            analytics.load = function (t, e) {
-              var n = document.createElement('script');
-              n.type = 'text/javascript';
-              n.async = !0;
-              n.src = 'https://cdn.segment.com/analytics.js/v1/' + t + '/analytics.min.js';
-              var a = document.getElementsByTagName('script')[0];
-              a.parentNode.insertBefore(n, a);
-              analytics._loadOptions = e;
-            };
-            analytics.SNIPPET_VERSION = '4.1.0';
-            analytics.load('YHeQyAdT4dS8r0XG8Zsho8Vn7wCKwiSZ');
-            analytics.page();
+          };
+          for (var t = 0; t < analytics.methods.length; t++) {
+            var e = analytics.methods[t];
+            analytics[e] = analytics.factory(e);
           }
-      })();
-    </script>
+          analytics.load = function (t, e) {
+            var n = document.createElement('script');
+            n.type = 'text/javascript';
+            n.async = !0;
+            n.src = 'https://cdn.segment.com/analytics.js/v1/' + t + '/analytics.min.js';
+            var a = document.getElementsByTagName('script')[0];
+            a.parentNode.insertBefore(n, a);
+            analytics._loadOptions = e;
+          };
+          analytics.SNIPPET_VERSION = '4.1.0';
+          analytics.load('YHeQyAdT4dS8r0XG8Zsho8Vn7wCKwiSZ');
+          analytics.page();
+        }
+    })();
+  </script>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="img/avatar2.ico" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="img/avatar2.ico" />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
-      integrity="sha384-IT8OQ5/IfeLGe8ZMxjj3QQNqT0zhBJSiFCL3uolrGgKRuenIU+mMS94kck/AHZWu"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Welcome to the portfolio</title>
-  </head>
-  <body id="bg-img">
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+  <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
+    integrity="sha384-IT8OQ5/IfeLGe8ZMxjj3QQNqT0zhBJSiFCL3uolrGgKRuenIU+mMS94kck/AHZWu"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Welcome to the portfolio</title>
+</head>
+
+<body id="bg-img">
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
       </div>
+      <ul class="menu-nav">
+        <li class="nav-item current">
+          <a href="index.html" class="nav-link"> Home </a>
+        </li>
 
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="index.html" class="nav-link"> Home </a>
-          </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link"> About </a>
+        </li>
 
-          <li class="nav-item">
-            <a href="about.html" class="nav-link"> About </a>
-          </li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link"> Projects </a>
+        </li>
 
-          <li class="nav-item">
-            <a href="projects.html" class="nav-link"> Projects </a>
-          </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link"> Contact </a>
+        </li>
+        <li class="nav-item">
+          <a href="tech.html" class="nav-link"> Known technologies </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link"> Contact </a>
-          </li>
-          <li class="nav-item">
-            <a href="tech.html" class="nav-link"> Known technologies </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <main id="home">
+    <h1 class="lg-heading">
+      Andrej
+      <span class="text-secondary">Šebeň</span>
+    </h1>
+    <h2 class="sm-heading">Developer, Programming enthusiast & more to come</h2>
+    <div class="icons">
+      <a href="https://onemandevz.itch.io" title="Itch.io"><i
+          class="fab fa-itch-io fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/andrej-%C5%A1ebe%C5%88-b9517113b/"
+        title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/OneManDevz" title="GitHub">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="/files/CV_AndrejSeben_EN.pdf" title="Download resume"
+        download="CV_AndrejSeben_EN.pdf">
+        <i class="fas fa-file-download fa-2x"></i>
+      </a>
+      <a href="https://blog.johnathan.codes/" title="Temporary Blog"
+        target="_blank">
+        <i class="fab fa-blogger fa-2x"></i>
+      </a>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
 
-    <main id="home">
-      <h1 class="lg-heading">
-        Andrej
-        <span class="text-secondary">Šebeň</span>
-      </h1>
-      <h2 class="sm-heading">Developer, Programming enthusiast & more to come</h2>
-      <div class="icons">
-        <a href="https://onemandevz.itch.io" title="Itch.io"
-          ><i class="fab fa-itch-io fa-2x"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/andrej-%C5%A1ebe%C5%88-b9517113b/" title="LinkedIn"
-          ><i class="fab fa-linkedin fa-2x"></i
-        ></a>
-        <a href="https://github.com/OneManDevz" title="GitHub">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-        <a
-          href="/files/CV_AndrejSeben_EN.pdf"
-          title="Download resume"
-          download="CV_AndrejSeben_EN.pdf"
-        >
-          <i class="fas fa-file-download fa-2x"></i>
-        </a>
-        <a href="https://blog.johnathan.codes/" title="Temporary Blog" target="_blank">
-          <i class="fab fa-blogger fa-2x"></i>
-        </a>
-      </div>
-    </main>
-    <script src="js/main.js"></script>
-  </body>
 </html>

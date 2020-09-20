@@ -1,254 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script>
-      !(function() {
-        var analytics = (window.analytics = window.analytics || []);
-        if (!analytics.initialize)
-          if (analytics.invoked) window.console && console.error && console.error('Segment snippet included twice.');
-          else {
-            analytics.invoked = !0;
-            analytics.methods = [
-              'trackSubmit',
-              'trackClick',
-              'trackLink',
-              'trackForm',
-              'pageview',
-              'identify',
-              'reset',
-              'group',
-              'track',
-              'ready',
-              'alias',
-              'debug',
-              'page',
-              'once',
-              'off',
-              'on'
-            ];
-            analytics.factory = function(t) {
-              return function() {
-                var e = Array.prototype.slice.call(arguments);
-                e.unshift(t);
-                analytics.push(e);
-                return analytics;
-              };
+
+<head>
+  <script>
+    !(function () {
+      var analytics = (window.analytics = window.analytics || []);
+      if (!analytics.initialize)
+        if (analytics.invoked) window.console && console.error && console.error('Segment snippet included twice.');
+        else {
+          analytics.invoked = !0;
+          analytics.methods = [
+            'trackSubmit',
+            'trackClick',
+            'trackLink',
+            'trackForm',
+            'pageview',
+            'identify',
+            'reset',
+            'group',
+            'track',
+            'ready',
+            'alias',
+            'debug',
+            'page',
+            'once',
+            'off',
+            'on'
+          ];
+          analytics.factory = function (t) {
+            return function () {
+              var e = Array.prototype.slice.call(arguments);
+              e.unshift(t);
+              analytics.push(e);
+              return analytics;
             };
-            for (var t = 0; t < analytics.methods.length; t++) {
-              var e = analytics.methods[t];
-              analytics[e] = analytics.factory(e);
-            }
-            analytics.load = function(t, e) {
-              var n = document.createElement('script');
-              n.type = 'text/javascript';
-              n.async = !0;
-              n.src = 'https://cdn.segment.com/analytics.js/v1/' + t + '/analytics.min.js';
-              var a = document.getElementsByTagName('script')[0];
-              a.parentNode.insertBefore(n, a);
-              analytics._loadOptions = e;
-            };
-            analytics.SNIPPET_VERSION = '4.1.0';
-            analytics.load('YHeQyAdT4dS8r0XG8Zsho8Vn7wCKwiSZ');
-            analytics.page();
+          };
+          for (var t = 0; t < analytics.methods.length; t++) {
+            var e = analytics.methods[t];
+            analytics[e] = analytics.factory(e);
           }
-      })();
-    </script>
+          analytics.load = function (t, e) {
+            var n = document.createElement('script');
+            n.type = 'text/javascript';
+            n.async = !0;
+            n.src = 'https://cdn.segment.com/analytics.js/v1/' + t + '/analytics.min.js';
+            var a = document.getElementsByTagName('script')[0];
+            a.parentNode.insertBefore(n, a);
+            analytics._loadOptions = e;
+          };
+          analytics.SNIPPET_VERSION = '4.1.0';
+          analytics.load('YHeQyAdT4dS8r0XG8Zsho8Vn7wCKwiSZ');
+          analytics.page();
+        }
+    })();
+  </script>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="img/avatar2.ico" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="img/avatar2.ico" />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
-      integrity="sha384-IT8OQ5/IfeLGe8ZMxjj3QQNqT0zhBJSiFCL3uolrGgKRuenIU+mMS94kck/AHZWu"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Known technologies</title>
-  </head>
-  <body>
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+  <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
+    integrity="sha384-IT8OQ5/IfeLGe8ZMxjj3QQNqT0zhBJSiFCL3uolrGgKRuenIU+mMS94kck/AHZWu"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Known technologies</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            About
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link">
+            Projects
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            Contact
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="tech.html" class="nav-link">
+            Known technologies
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="about">
+    <h1 class="lg-heading">
+      Known
+      <span class="text-secondary">techs</span>
+    </h1>
+    <h2 class="sm-heading">
+      What have I learnt?
+    </h2>
+    <div class="techs">
+      <div class="item">
+        <a href="https://unity.com" title="Unity 3D">
+          <img src="img/techs/unity.png" alt="Unity 3D" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!" title="HTML">
+          <img src="img/techs/to_use/html.svg" alt="HTML" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!" title="JavaScript">
+          <img src="img/techs/to_use/js_official.svg" alt="JavaScript" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://www.mongodb.com/" target="_blank" title="MongoDB">
+          <img src="img/techs/to_use/mongo.svg" alt="MongoDB" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://expressjs.com/" target="_blank" title="Express">
+          <img src="img/techs/express.png" alt="Express.js" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://reactjs.org/" target="_blank" title="React">
+          <img src="img/techs/to_use/reactjs.svg" alt="React" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://nodejs.org/en/" target="_blank" title="Nodejs">
+          <img src="img/techs/to_use/node.svg" alt="Nodejs" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://facebook.github.io/react-native/" target="_blank"
+          title="React Native">
+          <img src="img/techs/react-native-logo.png" alt="React Native" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://webpack.js.org/" target="_blank" title="Webpack">
+          <img src="img/techs/to_use/webpack.svg" alt="Webpack" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://git-scm.com/" target="_blank" title="Git">
+          <img src="img/techs/to_use/git.svg" alt="Git" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://graphql.org/" target="_blank" title="GraphQL">
+          <img src="img/techs/to_use/graphql.svg" alt="GraphQL" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://heroku.com/" target="_blank" title="Heroku">
+          <img src="img/techs/heroku.png" alt="Heroku" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!" title="C++">
+          <img src="img/techs/to_use/cpp3.svg" alt="C++" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!" title="C#">
+          <img src="img/techs/to_use/csharp2.svg" alt="C#" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!" title="C">
+          <img src="img/techs/to_use/c3.svg" alt="C" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://dotnet.microsoft.com/apps/aspnet" target="_blank"
+          title="ASP.Net">
+          <img src="img/techs/to_use/asp.svg" alt="ASP.Net" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://www.microsoft.com/en-us/sql-server" target="_blank"
+          title="Microsoft SQL Server">
+          <img src="img/techs/mssql.png" alt="Microsoft SQL Server" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://dynamics.microsoft.com/en-us/" target="_blank"
+          title="Microsoft Dynamics">
+          <img src="img/techs/crm.png" alt="Microsoft Dynamics" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!" target="_blank" title="SQL">
+          <img src="img/techs/to_use/sql.svg" alt="SQL" />
+        </a>
       </div>
 
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">
-              Home
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              About
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="projects.html" class="nav-link">
-              Projects
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              Contact
-            </a>
-          </li>
-          <li class="nav-item current">
-            <a href="tech.html" class="nav-link">
-              Known technologies
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="about">
-      <h1 class="lg-heading">
-        Known
-        <span class="text-secondary">techs</span>
-      </h1>
-      <h2 class="sm-heading">
-        What have I learnt?
-      </h2>
-      <div class="techs">
-        <div class="item">
-          <a href="https://unity.com" title="Unity 3D">
-            <img src="img/techs/unity.png" alt="Unity 3D" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="#!" title="HTML">
-            <img src="img/techs/to_use/html.svg" alt="HTML" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="#!" title="JavaScript">
-            <img src="img/techs/to_use/js_official.svg" alt="JavaScript" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://www.mongodb.com/" target="_blank" title="MongoDB">
-            <img src="img/techs/to_use/mongo.svg" alt="MongoDB" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://expressjs.com/" target="_blank" title="Express">
-            <img src="img/techs/express.png" alt="Express.js" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://reactjs.org/" target="_blank" title="React">
-            <img src="img/techs/to_use/reactjs.svg" alt="React" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://nodejs.org/en/" target="_blank" title="Nodejs">
-            <img src="img/techs/to_use/node.svg" alt="Nodejs" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://facebook.github.io/react-native/" target="_blank" title="React Native">
-            <img src="img/techs/react-native-logo.png" alt="React Native" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://webpack.js.org/" target="_blank" title="Webpack">
-            <img src="img/techs/to_use/webpack.svg" alt="Webpack" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://git-scm.com/" target="_blank" title="Git">
-            <img src="img/techs/to_use/git.svg" alt="Git" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://graphql.org/" target="_blank" title="GraphQL">
-            <img src="img/techs/to_use/graphql.svg" alt="GraphQL" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://heroku.com/" target="_blank" title="Heroku">
-            <img src="img/techs/heroku.png" alt="Heroku" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="#!" title="C++">
-            <img src="img/techs/to_use/cpp3.svg" alt="C++" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="#!" title="C#">
-            <img src="img/techs/to_use/csharp2.svg" alt="C#" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="#!" title="C">
-            <img src="img/techs/to_use/c3.svg" alt="C" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://dotnet.microsoft.com/apps/aspnet" target="_blank" title="ASP.Net">
-            <img src="img/techs/to_use/asp.svg" alt="ASP.Net" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" title="Microsoft SQL Server">
-            <img src="img/techs/mssql.png" alt="Microsoft SQL Server" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://dynamics.microsoft.com/en-us/" target="_blank" title="Microsoft Dynamics">
-            <img src="img/techs/crm.png" alt="Microsoft Dynamics" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="#!" target="_blank" title="SQL">
-            <img src="img/techs/to_use/sql.svg" alt="SQL" />
-          </a>
-        </div>
-
-        <div class="item">
-          <a href="https://wordpress.org/" target="_blank" title="WordPress">
-            <img src="img/techs/wordpress.png" alt="WordPress" />
-          </a>
-        </div>
-
-        <div class="item">
-          <a href="https://www.docker.com/" target="_blank" title="Docker">
-            <img src="img/techs/to_use/docker.svg" alt="Docker" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="#!" target="_blank" title="Linux">
-            <img src="img/techs/linux.png" alt="Linux" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://affinity.serif.com/en-gb/designer/" target="_blank" title="Affinity Designer">
-            <img src="img/techs/to_use/affinitydesigner.svg" alt="Affinity Designer" />
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://portal.azure.com/" target="_blank" title="Azure">
-            <img src="img/techs/to_use/azure.svg" alt="Azure" />
-          </a>
-        </div>
+      <div class="item">
+        <a href="https://wordpress.org/" target="_blank" title="WordPress">
+          <img src="img/techs/wordpress.png" alt="WordPress" />
+        </a>
       </div>
-    </main>
-    <footer id="main-footer">
-      Copyright &copy; 2019
-    </footer>
-    <script src="js/main.js"></script>
-  </body>
+
+      <div class="item">
+        <a href="https://www.docker.com/" target="_blank" title="Docker">
+          <img src="img/techs/to_use/docker.svg" alt="Docker" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!" target="_blank" title="Linux">
+          <img src="img/techs/linux.png" alt="Linux" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://affinity.serif.com/en-gb/designer/" target="_blank"
+          title="Affinity Designer">
+          <img src="img/techs/to_use/affinitydesigner.svg"
+            alt="Affinity Designer" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://portal.azure.com/" target="_blank" title="Azure">
+          <img src="img/techs/to_use/azure.svg" alt="Azure" />
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer id="main-footer">
+    Copyright &copy; 2019
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
