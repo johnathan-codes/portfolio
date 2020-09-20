@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Personal portfolio",
   "main": "index.js",
-  "homepage": "https://onemandevz.github.io/portfolio",
+  "homepage": "https://github.com/johnathan-codes/portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css --recursive"
   },
-  "author": "OneManDevz",
+  "author": "Johnathan",
   "license": "MIT",
   "dependencies": {
     "node-sass": "^4.14.1"
