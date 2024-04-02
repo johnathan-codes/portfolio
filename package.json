@@ -9,10 +9,6 @@
   },
   "author": "Johnathan",
   "license": "MIT",
-  "dependencies": {
-    "node-sass": "^9.0.0"
-  },
-  "devDependencies": {
-    "meow": "^13.2.0"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
